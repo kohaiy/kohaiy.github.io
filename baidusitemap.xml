@@ -4,6 +4,25 @@
 
     
   <url>
+    <loc>http://www.gqxqd.cn/20170824/My-New-Post.html</loc>
+    <lastmod>2017-08-25T15:10:50.802Z</lastmod>
+    <data>
+        <display>
+        <title>My New Post</title>
+        <pubTime>2017-08-23T16:14:57.000Z</pubTime>
+        
+        <tag>test</tag>
+         
+        <tag>测试</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.gqxqd.cn/20170825/my-works.html</loc>
     <lastmod>2017-08-25T10:19:53.512Z</lastmod>
     <data>
@@ -49,25 +68,6 @@
         <tag>test2</tag>
          
         <tag>test</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.gqxqd.cn/20170824/My-New-Post.html</loc>
-    <lastmod>2017-08-24T11:51:19.162Z</lastmod>
-    <data>
-        <display>
-        <title>My New Post</title>
-        <pubTime>2017-08-23T16:14:57.000Z</pubTime>
-        
-        <tag>test</tag>
-         
-        <tag>测试</tag>
          
          
            
