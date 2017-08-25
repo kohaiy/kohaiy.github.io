@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/ 
+Disallow: /js/
+Disallow: /css/
+
+Sitemap: http://www.gqxqd.cn/sitemap.xml
+Sitemap: http://www.gqxqd.cn/baidusitemap.xml
