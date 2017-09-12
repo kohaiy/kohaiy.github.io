@@ -1,7 +1,3 @@
 http://www.gqxqd.cn/20170912/run-nodejs-on-backend.html
 http://www.gqxqd.cn/20170825/my-works.html
-http://www.gqxqd.cn/20170825/test3.html
-http://www.gqxqd.cn/20170824/2017-08-24-test2.html
 http://www.gqxqd.cn/20170824/webpack-note-01.html
-http://www.gqxqd.cn/20170824/My-New-Post.html
-http://www.gqxqd.cn/20170823/hello-world.html

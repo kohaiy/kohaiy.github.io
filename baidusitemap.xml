@@ -4,6 +4,31 @@
 
     
   <url>
+    <loc>http://www.gqxqd.cn/20170824/webpack-note-01.html</loc>
+    <lastmod>2017-09-12T11:48:23.578Z</lastmod>
+    <data>
+        <display>
+        <title>webpack学习笔记01</title>
+        <pubTime>2017-08-24T03:45:00.000Z</pubTime>
+        
+        <tag>webpack</tag>
+         
+        <tag>笔记</tag>
+         
+         
+           
+             
+              <breadCrumb title="记忆碎片" url="http://www.gqxqd.cn/categories/%E8%AE%B0%E5%BF%86%E7%A2%8E%E7%89%87/"/>
+          
+             
+              <breadCrumb title="webpack" url="http://www.gqxqd.cn/categories/%E8%AE%B0%E5%BF%86%E7%A2%8E%E7%89%87/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.gqxqd.cn/20170912/run-nodejs-on-backend.html</loc>
     <lastmod>2017-09-12T11:45:08.461Z</lastmod>
     <data>
@@ -30,42 +55,6 @@
     
     
   <url>
-    <loc>http://www.gqxqd.cn/20170825/test3.html</loc>
-    <lastmod>2017-08-25T15:19:18.451Z</lastmod>
-    <data>
-        <display>
-        <title>test3</title>
-        <pubTime>2017-08-25T05:37:22.000Z</pubTime>
-        
-        <tag>test</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.gqxqd.cn/20170824/My-New-Post.html</loc>
-    <lastmod>2017-08-25T15:10:50.802Z</lastmod>
-    <data>
-        <display>
-        <title>My New Post</title>
-        <pubTime>2017-08-23T16:14:57.000Z</pubTime>
-        
-        <tag>test</tag>
-         
-        <tag>测试</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.gqxqd.cn/20170825/my-works.html</loc>
     <lastmod>2017-08-25T10:19:53.512Z</lastmod>
     <data>
@@ -83,64 +72,5 @@
 
     
     
-  <url>
-    <loc>http://www.gqxqd.cn/20170824/2017-08-24-test2.html</loc>
-    <lastmod>2017-08-24T12:03:11.977Z</lastmod>
-    <data>
-        <display>
-        <title>test2</title>
-        <pubTime>2017-08-24T11:58:27.000Z</pubTime>
-        
-        <tag>test2</tag>
-         
-        <tag>test</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
-  <url>
-    <loc>http://www.gqxqd.cn/20170824/webpack-note-01.html</loc>
-    <lastmod>2017-08-24T10:24:29.004Z</lastmod>
-    <data>
-        <display>
-        <title>webpack学习笔记01</title>
-        <pubTime>2017-08-24T03:45:00.000Z</pubTime>
-        
-        <tag>webpack</tag>
-         
-        <tag>笔记</tag>
-         
-         
-           
-             
-              <breadCrumb title="webpack" url="http://www.gqxqd.cn/categories/webpack/"/>
-          
-             
-              <breadCrumb title="笔记" url="http://www.gqxqd.cn/categories/webpack/%E7%AC%94%E8%AE%B0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-  <url>
-    <loc>http://www.gqxqd.cn/20170823/hello-world.html</loc>
-    <lastmod>2017-08-23T14:23:21.738Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2017-08-23T14:23:21.738Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
 </urlset>

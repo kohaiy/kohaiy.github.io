@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.gqxqd.cn/20170824/webpack-note-01.html</loc>
+    
+    <lastmod>2017-09-12T11:48:23.578Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.gqxqd.cn/20170912/run-nodejs-on-backend.html</loc>
     
     <lastmod>2017-09-12T11:45:08.461Z</lastmod>
@@ -12,20 +19,6 @@
     <loc>http://www.gqxqd.cn/404.html</loc>
     
     <lastmod>2017-08-29T16:11:05.946Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.gqxqd.cn/20170825/test3.html</loc>
-    
-    <lastmod>2017-08-25T15:19:18.451Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.gqxqd.cn/20170824/My-New-Post.html</loc>
-    
-    <lastmod>2017-08-25T15:10:50.802Z</lastmod>
     
   </url>
   
@@ -44,20 +37,6 @@
   </url>
   
   <url>
-    <loc>http://www.gqxqd.cn/20170824/2017-08-24-test2.html</loc>
-    
-    <lastmod>2017-08-24T12:03:11.977Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.gqxqd.cn/20170824/webpack-note-01.html</loc>
-    
-    <lastmod>2017-08-24T10:24:29.004Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.gqxqd.cn/categories/index.html</loc>
     
     <lastmod>2017-08-24T10:17:23.299Z</lastmod>
@@ -68,13 +47,6 @@
     <loc>http://www.gqxqd.cn/tags/index.html</loc>
     
     <lastmod>2017-08-24T10:14:22.102Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.gqxqd.cn/20170823/hello-world.html</loc>
-    
-    <lastmod>2017-08-23T14:23:21.738Z</lastmod>
     
   </url>
   
