@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>array-methods-of-js | GQxQD鱼籽 | 业精于勤荒于嬉，行成于思毁于随</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="js数组方法,JavaScript">
+    <meta name="description" content="JavaScript数组API构造函数123new Array()new Array(size)new Array(element0, element1, ..., elementn) 参数size 设定的数组元素个数。返回数组的length属性等于size。  element0, …elementn 参数列表，可以是两个或多个任意值[^1]。当Array()构造函数用这些参数调用时，新创建的数组">
+<meta name="keywords" content="js数组方法,JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="array-methods-of-js">
+<meta property="og:url" content="http://www.gqxqd.cn/20171023/array-methods-of-js.html">
+<meta property="og:site_name" content="GQxQD鱼籽">
+<meta property="og:description" content="JavaScript数组API构造函数123new Array()new Array(size)new Array(element0, element1, ..., elementn) 参数size 设定的数组元素个数。返回数组的length属性等于size。  element0, …elementn 参数列表，可以是两个或多个任意值[^1]。当Array()构造函数用这些参数调用时，新创建的数组">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-10-24T02:30:07.210Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="array-methods-of-js">
+<meta name="twitter:description" content="JavaScript数组API构造函数123new Array()new Array(size)new Array(element0, element1, ..., elementn) 参数size 设定的数组元素个数。返回数组的length属性等于size。  element0, …elementn 参数列表，可以是两个或多个任意值[^1]。当Array()构造函数用这些参数调用时，新创建的数组">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.13">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar2.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">余梓沛</h5>
+          <a href="mailto:916309979@qq.com" title="916309979@qq.com" class="mail">916309979@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                文章列表
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-list"></i>
+                文章分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签云
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/20170825/my-works.html"  >
+                <i class="icon icon-lg icon-mortar-board"></i>
+                我的作品
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/gqxqd" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                我的github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://blog.gqxqd.cn" target="_blank" >
+                <i class="icon icon-lg icon-flag"></i>
+                我的博客
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://www.gqxqd.cn/resume_builder/" target="_blank" >
+                <i class="icon icon-lg icon-address-card"></i>
+                简历生成器
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">array-methods-of-js</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">array-methods-of-js</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-10-23T15:42:59.000Z" itemprop="datePublished" class="page-time">
+  2017-10-23
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/JavaScript/">JavaScript</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/JavaScript/笔记/">笔记</a></li></ul></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>目录</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#JavaScript数组API"><span class="post-toc-number">1.</span> <span class="post-toc-text">JavaScript数组API</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#构造函数"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">构造函数</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#参数"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">参数</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#size"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">size</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#element0-…elementn"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">element0, …elementn</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#返回值"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">返回值</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#异常"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">异常</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#RangeError"><span class="post-toc-number">1.4.1.</span> <span class="post-toc-text">RangeError</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#直接量语法"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">直接量语法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#属性"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">属性</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#方法"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#concat"><span class="post-toc-number">1.7.1.</span> <span class="post-toc-text">concat()</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#概要"><span class="post-toc-number">1.7.1.1.</span> <span class="post-toc-text">概要</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#参数-1"><span class="post-toc-number">1.7.1.2.</span> <span class="post-toc-text">参数</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#返回值-1"><span class="post-toc-number">1.7.1.3.</span> <span class="post-toc-text">返回值</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#描述"><span class="post-toc-number">1.7.1.4.</span> <span class="post-toc-text">描述</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#示例"><span class="post-toc-number">1.7.1.5.</span> <span class="post-toc-text">示例</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#every-ES5"><span class="post-toc-number">1.7.2.</span> <span class="post-toc-text">every() - ES5</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#概要-1"><span class="post-toc-number">1.7.2.1.</span> <span class="post-toc-text">概要</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#参数-2"><span class="post-toc-number">1.7.2.2.</span> <span class="post-toc-text">参数</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#返回值-2"><span class="post-toc-number">1.7.2.3.</span> <span class="post-toc-text">返回值</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#描述-1"><span class="post-toc-number">1.7.2.4.</span> <span class="post-toc-text">描述</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#示例-1"><span class="post-toc-number">1.7.2.5.</span> <span class="post-toc-text">示例</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#filter-ES5"><span class="post-toc-number">1.7.3.</span> <span class="post-toc-text">* filter() - ES5</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#概要-2"><span class="post-toc-number">1.7.3.1.</span> <span class="post-toc-text">概要</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#参数-3"><span class="post-toc-number">1.7.3.2.</span> <span class="post-toc-text">参数</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#返回值-3"><span class="post-toc-number">1.7.3.3.</span> <span class="post-toc-text">返回值</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#描述-2"><span class="post-toc-number">1.7.3.4.</span> <span class="post-toc-text">描述</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#示例-2"><span class="post-toc-number">1.7.3.5.</span> <span class="post-toc-text">示例</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#forEach-ES5"><span class="post-toc-number">1.7.4.</span> <span class="post-toc-text">* forEach() - ES5</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#概要-3"><span class="post-toc-number">1.7.4.1.</span> <span class="post-toc-text">概要</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#返回值-4"><span class="post-toc-number">1.7.4.2.</span> <span class="post-toc-text">返回值</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#示例-3"><span class="post-toc-number">1.7.4.3.</span> <span class="post-toc-text">示例</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#indexOf-ES5"><span class="post-toc-number">1.7.5.</span> <span class="post-toc-text">indexOf() - ES5</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#概要-4"><span class="post-toc-number">1.7.5.1.</span> <span class="post-toc-text">概要</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#返回值-5"><span class="post-toc-number">1.7.5.2.</span> <span class="post-toc-text">返回值</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#示例-4"><span class="post-toc-number">1.7.5.3.</span> <span class="post-toc-text">示例</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#join"><span class="post-toc-number">1.7.6.</span> <span class="post-toc-text">* join()</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#概要-5"><span class="post-toc-number">1.7.6.1.</span> <span class="post-toc-text">概要</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#参数-4"><span class="post-toc-number">1.7.6.2.</span> <span class="post-toc-text">参数</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#示例-5"><span class="post-toc-number">1.7.6.3.</span> <span class="post-toc-text">示例</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#lastIndexOf-ES5"><span class="post-toc-number">1.7.7.</span> <span class="post-toc-text">lastIndexOf() - ES5</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#概要-6"><span class="post-toc-number">1.7.7.1.</span> <span class="post-toc-text">概要</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#map-ES5"><span class="post-toc-number">1.7.8.</span> <span class="post-toc-text">* map() - ES5</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#概要-7"><span class="post-toc-number">1.7.8.1.</span> <span class="post-toc-text">概要</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#示例-6"><span class="post-toc-number">1.7.8.2.</span> <span class="post-toc-text">示例</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#pop"><span class="post-toc-number">1.7.9.</span> <span class="post-toc-text">pop()</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#示例-7"><span class="post-toc-number">1.7.9.1.</span> <span class="post-toc-text">示例</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#push"><span class="post-toc-number">1.7.10.</span> <span class="post-toc-text">push()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#reduce-ES5"><span class="post-toc-number">1.7.11.</span> <span class="post-toc-text">* reduce() - ES5</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#概要-8"><span class="post-toc-number">1.7.11.1.</span> <span class="post-toc-text">概要</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#参数-5"><span class="post-toc-number">1.7.11.2.</span> <span class="post-toc-text">参数</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#返回值-6"><span class="post-toc-number">1.7.11.3.</span> <span class="post-toc-text">返回值</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#示例-8"><span class="post-toc-number">1.7.11.4.</span> <span class="post-toc-text">示例</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#reduceRight-ES5"><span class="post-toc-number">1.7.12.</span> <span class="post-toc-text">reduceRight() - ES5</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#示例-9"><span class="post-toc-number">1.7.12.1.</span> <span class="post-toc-text">示例</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#reverse"><span class="post-toc-number">1.7.13.</span> <span class="post-toc-text">* reverse()</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#示例-10"><span class="post-toc-number">1.7.13.1.</span> <span class="post-toc-text">示例</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#shift"><span class="post-toc-number">1.7.14.</span> <span class="post-toc-text">shift()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#slice"><span class="post-toc-number">1.7.15.</span> <span class="post-toc-text">* slice()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#some-ES5"><span class="post-toc-number">1.7.16.</span> <span class="post-toc-text">some() - ES5</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#sort"><span class="post-toc-number">1.7.17.</span> <span class="post-toc-text">sort()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#splice"><span class="post-toc-number">1.7.18.</span> <span class="post-toc-text">* splice()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#toLocaleString-NaN"><span class="post-toc-number">1.7.19.</span> <span class="post-toc-text">toLocaleString()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#toString-NaN"><span class="post-toc-number">1.7.20.</span> <span class="post-toc-text">toString()</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#unshift"><span class="post-toc-number">1.7.21.</span> <span class="post-toc-text">unshift()</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-array-methods-of-js"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">array-methods-of-js</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-10-23 23:42:59" datetime="2017-10-23T15:42:59.000Z"  itemprop="datePublished">2017-10-23</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/JavaScript/">JavaScript</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/JavaScript/笔记/">笔记</a></li></ul></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="JavaScript数组API"><a href="#JavaScript数组API" class="headerlink" title="JavaScript数组API"></a>JavaScript数组API</h1><h2 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">new</span> <span class="built_in">Array</span>()</div><div class="line"><span class="keyword">new</span> <span class="built_in">Array</span>(size)</div><div class="line"><span class="keyword">new</span> <span class="built_in">Array</span>(element0, element1, ..., elementn)</div></pre></td></tr></table></figure>
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><h3 id="size"><a href="#size" class="headerlink" title="size"></a>size</h3><blockquote>
+<p>设定的数组元素个数。返回数组的length属性等于size。</p>
+</blockquote>
+<h3 id="element0-…elementn"><a href="#element0-…elementn" class="headerlink" title="element0, …elementn"></a>element0, …elementn</h3><blockquote>
+<p>参数列表，可以是两个或多个任意值[^1]。当Array()构造函数用这些参数调用时，新创建的数组实例会用指定的参数值来初始化，并将length属性设置为参数个数。</p>
+</blockquote>
+<h2 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h2><p>新创建和初始化的数组。</p>
+<ul>
+<li>不带参数时，返回的数组为空，length属性为0。</li>
+<li>当用单个数值参数调用时，返回带指定个数的未定义元素的数组。</li>
+<li>使用其他参数调用时，构造函数会使用指定参数值初始化数组。</li>
+<li>当Array()构造函数不带new操作符，直接当做函数调用时，其表现行为与带有new操作符调用时时完全一样的。</li>
+</ul>
+<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><h3 id="RangeError"><a href="#RangeError" class="headerlink" title="RangeError"></a>RangeError</h3><blockquote>
+<p>当给Array()构造函数传入单个整数参数size时，如果size为负数，或大于$2^{32}-1$时，会抛出RangeError异常。</p>
+</blockquote>
+<h2 id="直接量语法"><a href="#直接量语法" class="headerlink" title="直接量语法"></a>直接量语法</h2><p>ECMAScript 3规定了数组的直接量语法。可以将逗号分隔的表达式列表放在方括号中来创建和初始化一个数组。这些表达式的值会成为数组的元素。例如：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = [<span class="number">1</span>, <span class="literal">true</span>, <span class="string">'abc'</span>];</div><div class="line"><span class="keyword">var</span> b = [a[<span class="number">0</span>], a[<span class="number">0</span>]*<span class="number">2</span>, f(x)];</div></pre></td></tr></table></figure>
+<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p><strong><em>length</em></strong></p>
+<blockquote>
+<p>一个可读/写的整数，用来指明数组中的元素个数。当数组中的元素不连续时，length等于数组最后一个元素的序号加一。改变length值会裁剪或扩充数组。</p>
+</blockquote>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><blockquote>
+<p>ECMAScript 5中新增加了以下方法：every()、filter()、forEach()、indexOf()、lastIndexOf()、map()、reduce()、reduceRight()和some()。在ES5标准化之前，除了IE，其他浏览器已经实现了这些方法。</p>
+</blockquote>
+<h3 id="concat"><a href="#concat" class="headerlink" title="concat()"></a>concat()</h3><blockquote>
+<p>衔接数组</p>
+</blockquote>
+<h4 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">array.concat(value, ...)</div></pre></td></tr></table></figure>
+<h4 id="参数-1"><a href="#参数-1" class="headerlink" title="参数"></a>参数</h4><p>value, …</p>
+<p>​    任意个要衔接到array中的值。</p>
+<h4 id="返回值-1"><a href="#返回值-1" class="headerlink" title="返回值"></a>返回值</h4><p>一个新数组，包含array的元素，以及衔接的新元素。</p>
+<h4 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h4><p>concat()会将参数衔接到array中得到一个新的数组并返回。它不会修改array。如果传给concat()的某个参数本身是一个数组，则会将该数组的元素衔接到array中，而不是数组本身。</p>
+<h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</div><div class="line">a.concat(<span class="number">4</span>, <span class="number">5</span>);				<span class="comment">// 返回 [1, 2, 3, 4, 5]</span></div><div class="line">a.concat([<span class="number">4</span>, <span class="number">5</span>]);			<span class="comment">// 返回 [1, 2, 3, 4, 5]</span></div><div class="line">a.concat([<span class="number">4</span>, <span class="number">5</span>], [<span class="number">6</span>, <span class="number">7</span>]);	<span class="comment">// 返回 [1, 2, 3, 4, 5, 6, 7]</span></div><div class="line">a.concat(<span class="number">4</span>, [<span class="number">5</span>, [<span class="number">6</span>, <span class="number">7</span>]]);	<span class="comment">// 返回 [1, 2, 3, 4, 5, [6, 7]]</span></div></pre></td></tr></table></figure>
+<h3 id="every-ES5"><a href="#every-ES5" class="headerlink" title="every() - ES5"></a>every() - ES5</h3><blockquote>
+<p>测试断言函数是否对每个元素为真。</p>
+</blockquote>
+<h4 id="概要-1"><a href="#概要-1" class="headerlink" title="概要"></a>概要</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">array.every(predicate)</div><div class="line">array.every(predicate, o)</div></pre></td></tr></table></figure>
+<h4 id="参数-2"><a href="#参数-2" class="headerlink" title="参数"></a>参数</h4><p>predicate</p>
+<p>​    用来测试数组元素的断言函数。</p>
+<p>o</p>
+<p>​    调用predicate时的可选this值。</p>
+<h4 id="返回值-2"><a href="#返回值-2" class="headerlink" title="返回值"></a>返回值</h4><p>如果对array的每一个元素调用predicate时都返回真值，则返回true。如果有任何一个元素调用predicate时返回假值，则返回false。</p>
+<h4 id="描述-1"><a href="#描述-1" class="headerlink" title="描述"></a>描述</h4><p>every()方法用来测试数组的所有元素是否都满足某些条件。它会按照序号从小到大的顺序遍历array中的元素，并对每个元素调用predicate函数，如果predicate返回false（或任何可以转化为false值），则every()会停止遍历，并立刻返回false。如果predicate的每一次调用都返回true，则every()返回true。当遍历的数组为空时，every()返回true。</p>
+<p>对数组的每一个序号i，调用predicate时带有三个参数：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">predicate(array[i], i, array)</div></pre></td></tr></table></figure>
+<p>predicate的返回值会当做布尔值解析。true和所有真值表示该数组元素通过了测试或者说满足该函数所描述的条件。如果返回值为false或假值，则表示数组元素没有通过测试。</p>
+<h4 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].every(<span class="function"><span class="keyword">function</span>(<span class="params">x</span>) </span>&#123; <span class="keyword">return</span> x &lt; <span class="number">5</span>; &#125;)	<span class="comment">// =&gt; true: 所有元素都 &lt; 5</span></div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].every(<span class="function"><span class="keyword">function</span>(<span class="params">x</span>) </span>&#123; <span class="keyword">return</span> x &lt; <span class="number">3</span>; &#125;)	<span class="comment">// =&gt; false: 不是所有元素都 &lt; 3</span></div><div class="line">[].every(<span class="function"><span class="keyword">function</span>(<span class="params">x</span>) </span>&#123;<span class="keyword">return</span> <span class="literal">false</span>; &#125;)			<span class="comment">// =&gt; true: []总是返回true</span></div></pre></td></tr></table></figure>
+<h3 id="filter-ES5"><a href="#filter-ES5" class="headerlink" title="* filter() - ES5"></a>* filter() - ES5</h3><blockquote>
+<p>返回通过断言的数组元素。</p>
+</blockquote>
+<h4 id="概要-2"><a href="#概要-2" class="headerlink" title="概要"></a>概要</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">array.map(predicate)</div><div class="line">array.map(predicate, o)</div></pre></td></tr></table></figure>
+<h4 id="参数-3"><a href="#参数-3" class="headerlink" title="参数"></a>参数</h4><p>predicate</p>
+<p>​    用来判断array中的元素是否需要包含在返回数组中的调用函数。</p>
+<p>o</p>
+<p>​    调用predicate时的可选this值。</p>
+<h4 id="返回值-3"><a href="#返回值-3" class="headerlink" title="返回值"></a>返回值</h4><p>一个新数组，只包含那些让predicate返回真值的数组元素。</p>
+<h4 id="描述-2"><a href="#描述-2" class="headerlink" title="描述"></a>描述</h4><p>filter()会创建一个新数组，包含那些让predicate函数返回真值的array的元素。</p>
+<p>…</p>
+<h4 id="示例-2"><a href="#示例-2" class="headerlink" title="示例"></a>示例</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].filter(<span class="function"><span class="keyword">function</span>(<span class="params">x</span>) </span>&#123; <span class="keyword">return</span> x &gt; <span class="number">1</span>; &#125;);	<span class="comment">// =&gt; [2, 3]</span></div></pre></td></tr></table></figure>
+<h3 id="forEach-ES5"><a href="#forEach-ES5" class="headerlink" title="* forEach() - ES5"></a>* forEach() - ES5</h3><blockquote>
+<p>为每一个数组元素调用一个函数。</p>
+</blockquote>
+<h4 id="概要-3"><a href="#概要-3" class="headerlink" title="概要"></a>概要</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">array.forEach(f)</div><div class="line">array.forEach(f, o)</div></pre></td></tr></table></figure>
+<h4 id="返回值-4"><a href="#返回值-4" class="headerlink" title="返回值"></a>返回值</h4><p>该方法为返回值。</p>
+<h4 id="示例-3"><a href="#示例-3" class="headerlink" title="示例"></a>示例</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</div><div class="line">a.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">x, i, a</span>) </span>&#123; a[i]++; &#125;);	<span class="comment">// a现在是 [2, 3, 4]</span></div></pre></td></tr></table></figure>
+<h3 id="indexOf-ES5"><a href="#indexOf-ES5" class="headerlink" title="indexOf() - ES5"></a>indexOf() - ES5</h3><blockquote>
+<p>查找数组</p>
+</blockquote>
+<h4 id="概要-4"><a href="#概要-4" class="headerlink" title="概要"></a>概要</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">array.indexOf(value)</div><div class="line">array.indexOf(value, start)</div></pre></td></tr></table></figure>
+<h4 id="返回值-5"><a href="#返回值-5" class="headerlink" title="返回值"></a>返回值</h4><p>一个大于等于start的最小序号值，该序号值处的array元素与value全等。如果不存在匹配元素时，则返回-1。</p>
+<h4 id="示例-4"><a href="#示例-4" class="headerlink" title="示例"></a>示例</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>].indexOf(<span class="string">'b'</span>);		<span class="comment">// =&gt; 1</span></div><div class="line">[<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>].indexOf(<span class="string">'d'</span>);		<span class="comment">// =&gt; -1</span></div><div class="line">[<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>].indexOf(<span class="string">'a'</span>, <span class="number">1</span>);	<span class="comment">// =&gt; -1</span></div></pre></td></tr></table></figure>
+<h3 id="join"><a href="#join" class="headerlink" title="* join()"></a>* join()</h3><blockquote>
+<p>将数组元素衔接为字符串</p>
+</blockquote>
+<h4 id="概要-5"><a href="#概要-5" class="headerlink" title="概要"></a>概要</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">array.join()</div><div class="line">array.join(separator)</div></pre></td></tr></table></figure>
+<h4 id="参数-4"><a href="#参数-4" class="headerlink" title="参数"></a>参数</h4><p>separator</p>
+<p>​    在返回的字符串中，用来分隔数组的某个元素与下一个元素的可选字符或字符串。</p>
+<p>​    如果省略，默认是英文逗号（,）。</p>
+<h4 id="示例-5"><a href="#示例-5" class="headerlink" title="示例"></a>示例</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">a = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="string">'testing'</span>);</div><div class="line">s = a.join(<span class="string">'+'</span>);		<span class="comment">// s 是字符串 "1+2+3+testing"</span></div></pre></td></tr></table></figure>
+<h3 id="lastIndexOf-ES5"><a href="#lastIndexOf-ES5" class="headerlink" title="lastIndexOf() - ES5"></a>lastIndexOf() - ES5</h3><blockquote>
+<p>反向查找数组</p>
+</blockquote>
+<h4 id="概要-6"><a href="#概要-6" class="headerlink" title="概要"></a>概要</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">array.lastIndexOf(value)</div><div class="line">array.lastIndexOf(value, start)</div></pre></td></tr></table></figure>
+<h3 id="map-ES5"><a href="#map-ES5" class="headerlink" title="* map() - ES5"></a>* map() - ES5</h3><blockquote>
+<p>从数组元素中计算新值。</p>
+</blockquote>
+<h4 id="概要-7"><a href="#概要-7" class="headerlink" title="概要"></a>概要</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">array.map(f)</div><div class="line">array.map(f, o)</div></pre></td></tr></table></figure>
+<h4 id="示例-6"><a href="#示例-6" class="headerlink" title="示例"></a>示例</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>].map(<span class="function"><span class="keyword">function</span>(<span class="params">x</span>) </span>&#123; <span class="keyword">return</span> x*x; &#125;);	<span class="comment">// =&gt; [1, 4, 9]</span></div></pre></td></tr></table></figure>
+<h3 id="pop"><a href="#pop" class="headerlink" title="pop()"></a>pop()</h3><blockquote>
+<p>移除并返回数组的最后一个元素。</p>
+</blockquote>
+<h4 id="示例-7"><a href="#示例-7" class="headerlink" title="示例"></a>示例</h4><p>pop()与伴随的push()方法，可以提供先进后出（FILO）的栈功能。例如：</p>
+ <figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> stack = [];		<span class="comment">// stack: []</span></div><div class="line">stack.push(<span class="number">1</span>, <span class="number">2</span>);	<span class="comment">// stack: [1,2]			返回2</span></div><div class="line">stack.pop();		<span class="comment">// stack: [1]			返回2</span></div><div class="line">stack.push([<span class="number">4</span>, <span class="number">5</span>]);	<span class="comment">// stack: [1, [4,5]]	返回2</span></div><div class="line">stack.pop();		<span class="comment">// stack: [1]			返回[4,5]</span></div><div class="line">stack.pop();		<span class="comment">// stack: []			返回1</span></div></pre></td></tr></table></figure>
+<h3 id="push"><a href="#push" class="headerlink" title="push()"></a>push()</h3><blockquote>
+<p>给数组追加元素。</p>
+</blockquote>
+<h3 id="reduce-ES5"><a href="#reduce-ES5" class="headerlink" title="* reduce() - ES5"></a>* reduce() - ES5</h3><blockquote>
+<p>从数组元素中计算出一个值。</p>
+</blockquote>
+<h4 id="概要-8"><a href="#概要-8" class="headerlink" title="概要"></a>概要</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">array.reduce(f)</div><div class="line">array.reduce(f, inital)</div></pre></td></tr></table></figure>
+<h4 id="参数-5"><a href="#参数-5" class="headerlink" title="参数"></a>参数</h4><p>f</p>
+<p>​    一个函数，可以合并两个值（比如两个数组元素），并返回一个“缩减”的新值。</p>
+<p>initial</p>
+<p>​    用来缩减数组的可选初始值。如果指定该参数，reduce()的行为会像是把该参数插入array的头部一样。</p>
+<h4 id="返回值-6"><a href="#返回值-6" class="headerlink" title="返回值"></a>返回值</h4><p>数组的化简值，该值时最后一次调用f时的返回值。</p>
+<h4 id="示例-8"><a href="#示例-8" class="headerlink" title="示例"></a>示例</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>].reduce(<span class="function"><span class="keyword">function</span>(<span class="params">x,y</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> x*y;</div><div class="line">&#125;);		<span class="comment">// =&gt; 24: ((1*2)*3)*4</span></div><div class="line"></div><div class="line">[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>].reduce(<span class="function"><span class="keyword">function</span>(<span class="params">x,y</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> x*y;</div><div class="line">&#125;, <span class="number">5</span>);		<span class="comment">// =&gt; 120: (((5*1)*2)*3)*4</span></div></pre></td></tr></table></figure>
+<h3 id="reduceRight-ES5"><a href="#reduceRight-ES5" class="headerlink" title="reduceRight() - ES5"></a>reduceRight() - ES5</h3><blockquote>
+<p>从右到左缩减数组</p>
+</blockquote>
+<h4 id="示例-9"><a href="#示例-9" class="headerlink" title="示例"></a>示例</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[<span class="number">2</span>,<span class="number">10</span>,<span class="number">60</span>].reduceRight(<span class="function"><span class="keyword">function</span>(<span class="params">x,y</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> x/y;</div><div class="line">&#125;);		<span class="comment">// =&gt; 3: (60/10)/2</span></div></pre></td></tr></table></figure>
+<h3 id="reverse"><a href="#reverse" class="headerlink" title="* reverse()"></a>* reverse()</h3><blockquote>
+<p>颠倒数组中的元素顺序。</p>
+</blockquote>
+<h4 id="示例-10"><a href="#示例-10" class="headerlink" title="示例"></a>示例</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">a = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>);	<span class="comment">// a[0] == 1, a[2] == 3;</span></div><div class="line">a.reverse();			<span class="comment">// 现在 a[0] == 3, a[2] == 1;</span></div></pre></td></tr></table></figure>
+<h3 id="shift"><a href="#shift" class="headerlink" title="shift()"></a>shift()</h3><blockquote>
+<p>移除数组的第一个元素。</p>
+</blockquote>
+<h3 id="slice"><a href="#slice" class="headerlink" title="* slice()"></a>* slice()</h3><blockquote>
+<p>返回数组的一部分。</p>
+</blockquote>
+<h3 id="some-ES5"><a href="#some-ES5" class="headerlink" title="some() - ES5"></a>some() - ES5</h3><blockquote>
+<p>测试是否有元素满足断言函数。</p>
+</blockquote>
+<h3 id="sort"><a href="#sort" class="headerlink" title="sort()"></a>sort()</h3><blockquote>
+<p>对数组元素进行排序。</p>
+</blockquote>
+<h3 id="splice"><a href="#splice" class="headerlink" title="* splice()"></a>* splice()</h3><blockquote>
+<p>插入、删除或替换数组元素。</p>
+</blockquote>
+<h3 id="toLocaleString-NaN"><a href="#toLocaleString-NaN" class="headerlink" title="toLocaleString()"></a>toLocaleString()</h3><h3 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="toString()"></a>toString()</h3><h3 id="unshift"><a href="#unshift" class="headerlink" title="unshift()"></a>unshift()</h3><p>[^1]: 一个值时也行，只要不是数值，比如<code>new Array(&#39;1&#39;)</code><br>[^]: </p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-10-24T02:30:07.210Z" itemprop="dateUpdated">2017-10-24 10:30:07</time>
+</span><br>
+
+
+        
+        除特殊说明，转载请备注：<a href="/20171023/array-methods-of-js.html" target="_blank" rel="external">http://www.gqxqd.cn/20171023/array-methods-of-js.html</a>
+        
+    </div>
+    <footer>
+        <a href="http://www.gqxqd.cn">
+            <img src="/img/avatar2.jpg" alt="余梓沛">
+            余梓沛
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js数组方法/">js数组方法</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.gqxqd.cn/20171023/array-methods-of-js.html&title=《array-methods-of-js》 — GQxQD鱼籽&pic=http://www.gqxqd.cn/img/avatar2.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.gqxqd.cn/20171023/array-methods-of-js.html&title=《array-methods-of-js》 — GQxQD鱼籽&source=余梓沛同学的小站" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.gqxqd.cn/20171023/array-methods-of-js.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《array-methods-of-js》 — GQxQD鱼籽&url=http://www.gqxqd.cn/20171023/array-methods-of-js.html&via=http://www.gqxqd.cn" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.gqxqd.cn/20171023/array-methods-of-js.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/20171004/jsFiddleTest.html" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">jsFiddleTest</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+    <!--PC和WAP自适应版-->
+<div id="SOHUCS"></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = 'cytbeqsKT'; 
+var conf = 'prod_f4088d47eae6a2b4b1855c59ea773ec0'; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        求辣条~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+        
+        <p>友情链接：
+            
+            <a href="http://blog.gqxqd.cn" target="_blank">我的博客</a>
+            
+            <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=x-728fT3-v7w-oe2tumkqKo&subject=Friendly Link Application about www.gqxqd.cn" target="_blank">友链申请</a>
+            
+        </p>
+        
+    </div>
+    <div class="bottom">
+        <p><span>余梓沛 &copy; 2017</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备17095213号</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+    <!--baidu-->
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.gqxqd.cn/20171023/array-methods-of-js.html&title=《array-methods-of-js》 — GQxQD鱼籽&pic=http://www.gqxqd.cn/img/avatar2.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.gqxqd.cn/20171023/array-methods-of-js.html&title=《array-methods-of-js》 — GQxQD鱼籽&source=余梓沛同学的小站" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.gqxqd.cn/20171023/array-methods-of-js.html" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《array-methods-of-js》 — GQxQD鱼籽&url=http://www.gqxqd.cn/20171023/array-methods-of-js.html&via=http://www.gqxqd.cn" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.gqxqd.cn/20171023/array-methods-of-js.html" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://www.gqxqd.cn/20171023/array-methods-of-js.html" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+lazyScripts.push('//s95.cnzz.com/z_stat.php?id=1263767539&web_id=1263767539')
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.13"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.13" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
