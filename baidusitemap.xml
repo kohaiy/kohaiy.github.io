@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.gqxqd.cn/20170825/my-works.html</loc>
+    <lastmod>2017-10-24T02:58:43.092Z</lastmod>
+    <data>
+        <display>
+        <title>我的作品集</title>
+        <pubTime>2017-08-25T10:16:07.000Z</pubTime>
+        
+        <tag>我的作品</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.gqxqd.cn/20171023/array-methods-of-js.html</loc>
     <lastmod>2017-10-24T02:49:58.378Z</lastmod>
     <data>
@@ -90,23 +107,6 @@
              
               <breadCrumb title="node.js" url="http://www.gqxqd.cn/categories/%E8%AE%B0%E5%BF%86%E7%A2%8E%E7%89%87/node-js/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.gqxqd.cn/20170825/my-works.html</loc>
-    <lastmod>2017-08-25T10:19:53.513Z</lastmod>
-    <data>
-        <display>
-        <title>我的作品集</title>
-        <pubTime>2017-08-25T10:16:07.000Z</pubTime>
-        
-        <tag>我的作品</tag>
-         
-         
-           
         </display>
     </data>
     </url>
