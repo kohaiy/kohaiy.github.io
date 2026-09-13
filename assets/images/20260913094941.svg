@@ -1,4 +1,99 @@
 <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(145deg, #a9d8e6 0%, #d4eef7 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+        }
+        .canvas-wrapper {
+            background: #e1f2f9;
+            border-radius: 48px;
+            padding: 24px;
+            box-shadow: 0 20px 40px rgba(0, 40, 60, 0.3), inset 0 1px 4px #fff9;
+        }
+        svg {
+            display: block;
+            width: 800px;
+            height: 600px;
+            border-radius: 32px;
+            background: #c5e6f2;
+            box-shadow: inset 0 0 30px #98c1d9, 0 6px 12px #0000001a;
+            cursor: default;
+            transition: all 0.2s;
+        }
+
+        /* ========== 动画定义 ========== */
+        /* 车轮旋转 */
+        .wheel-spin {
+            transform-origin: 0px 0px;
+            animation: spin 0.9s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* 踏板旋转 (围绕中轴) */
+        .pedal-spin {
+            transform-origin: 0px 0px;
+            animation: spin 0.9s linear infinite;
+        }
+
+        /* 鹈鹕上下浮动 (模仿踩踏起伏) */
+        .pelican-bob {
+            animation: bob 0.9s ease-in-out infinite;
+        }
+        @keyframes bob {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-3px); }
+        }
+
+        /* 翅膀轻微摆动 —— 空气动力学! */
+        .wing-flap {
+            transform-origin: 70px 115px;  /* 以翅膀根部为轴 */
+            animation: wingFlap 0.9s ease-in-out infinite;
+        }
+        @keyframes wingFlap {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(5deg); }
+        }
+
+        /* 头/鸟喙轻微点头 */
+        .head-nod {
+            transform-origin: 95px 60px;
+            animation: nod 0.9s ease-in-out infinite;
+        }
+        @keyframes nod {
+            0%, 100% { transform: rotate(-2deg); }
+            50% { transform: rotate(3deg); }
+        }
+
+        /* 背景云朵缓慢飘动 */
+        .cloud-move {
+            animation: cloudDrift 18s linear infinite;
+        }
+        @keyframes cloudDrift {
+            0% { transform: translateX(0px); }
+            100% { transform: translateX(120px); }
+        }
+
+        /* 小草/小石子晃动 */
+        .ground-shimmer {
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        @keyframes shimmer {
+            0%, 100% { opacity: 0.5; transform: scaleX(1); }
+            50% { opacity: 0.9; transform: scaleX(1.02); }
+        }
+    </style>
         <defs>
             <!-- 车轮渐变 -->
             <radialGradient id="tyreGrad" cx="50%" cy="50%" r="50%">
